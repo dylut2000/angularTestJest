@@ -19,3 +19,8 @@ npm remove karma karma-chrome-launcher karma-coverage-istanbul-reporter karma-ja
 rm ./karma.conf.js ./src/test.ts
 ```
 
+* Step 2 : Install [Jest](https://jestjs.io/docs/en/getting-started) and [jest-preset-angular](https://www.npmjs.com/package/jest-preset-angular)
+
+```
+npm i -D jest @types/jest @angular-builders/jest
+```
