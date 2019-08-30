@@ -35,3 +35,34 @@ In **tsconfig.spec.json** (src directory or project roots, used by Jest)<br>
 3 . Add **jest** to types array
 <hr>
 
+* step 4 : In **angular.json** change **@angular-devkit/build-angular:karma** to **@angular-builders/jest:run** 
+
+```
+"projects": {
+    ...
+    "[your-project]": {
+         ...
+         "architect": {
+                ...
+                "test": {
+                          "builder": "@angular-builders/jest:run"
+                          "options": {
+                                ... //see here
+                          }
+```
+
+**Now u can run the test**
+
+``` 
+ng test 
+```
+<hr>
+
+Some reference that might help : <br>
+[Thymikee](https://github.com/thymikee/jest-preset-angular) <br>
+[Tran son](https://itnext.io/how-i-do-configure-jest-to-test-my-angular-8-project-2bd84a21d725) <br>
+[This is where i got more helps](https://www.npmjs.com/package/@angular-builders/jest)
+<br><br>
+
+## Angular unit testing with Jest made easy by [Hardy Lutula](https://twitter.com/dylut2000?lang=en)
+
