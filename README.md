@@ -18,9 +18,20 @@ npm remove karma karma-chrome-launcher karma-coverage-istanbul-reporter karma-ja
 ```
 rm ./karma.conf.js ./src/test.ts
 ```
+<hr>
 
 * Step 2 : Install [Jest](https://jestjs.io/docs/en/getting-started) and [jest-preset-angular](https://www.npmjs.com/package/jest-preset-angular)
 
 ```
 npm i -D jest @types/jest @angular-builders/jest
 ```
+<hr>
+
+* step 3 : Update your Typescript configurations
+
+In **tsconfig.spec.json** (src directory or project roots, used by Jest)<br>
+1 . Replace **jasmine** in types array with **jest**<br>
+2 . Remove **test.ts** from files array<br>
+3 . Add **jest** to types array
+<hr>
+
